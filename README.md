@@ -11,7 +11,11 @@ In this laboratory you will work with the concept of inheritance in Python.
 You will find the following files in the folder of this laboratory:
 
 - `vikings_clases.py`
-- `tests.py`
+- `1-testsSoldier.py`
+- `2-testsVikings.py`
+- `3-testsSaxons.py`
+- `4-testsWar.py`
+
 
 You are free to use any of the code editors you have to open these files.
 
