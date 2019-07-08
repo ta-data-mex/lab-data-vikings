@@ -20,9 +20,9 @@ class Viking(Soldier):
   def receive_damage(self, damage):
     self.health -= damage
     if self.health > 0:
-      print(f"{self.name} received {damage} points of damage.")
+      print(f"{self.name} received {damage} points of damage")
     if self.health <= 0:
-      print(f"{self.name} has died in act of combat.")
+      print(f"{self.name} has died in act of combat")
   
   def battle_cry(self):
     return "Odin Owns You All!"
