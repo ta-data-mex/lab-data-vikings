@@ -20,9 +20,9 @@ class Viking(Soldier):
   def receive_damage(self, damage):
     self.health -= damage
     if self.health > 0:
-      print(f"{self.name} received {damage} points of damage")
+      return f"{self.name} received {damage} points of damage"
     if self.health <= 0:
-      print(f"{self.name} has died in act of combat")
+      return f"{self.name} has died in act of combat"
   
   def battle_cry(self):
     return "Odin Owns You All!"
@@ -35,9 +35,9 @@ class Saxon(Soldier):
   def receive_damage(self, damage):
     self.health -= damage
     if self.health > 0:
-      print(f"A Saxon has received {damage} points of damage")
+      return f"A Saxon has received {damage} points of damage"
     if self.health <= 0:
-      print(f"A Saxon has died in combat")
+      return f"A Saxon has died in combat"
 
 
 # War
@@ -76,8 +76,8 @@ class War:
 
   def show_status(self):
     if len(self.saxonArmy) == 0:
-      print("Vikings have won the war of the century!")
+      return "Vikings have won the war of the century!"
     if len(self.vikingArmy) == 0:
-      print("Saxons have fought for their lives and survived another day...")
+      return "Saxons have fought for their lives and survived another day..."
     if len(self.saxonArmy) >= 1 and len(self.vikingArmy) >= 1:
-      print("Vikings and Saxons are still in the thick of battle.")
+      return "Vikings and Saxons are still in the thick of battle."
