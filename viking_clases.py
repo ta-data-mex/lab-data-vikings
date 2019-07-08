@@ -57,9 +57,10 @@ class War:
     if len(self.saxon_army) > 0:
       saxon_random = random.randint(0,len(self.saxon_army)-1)
       viking_random = random.randint(0, len(self.viking_army)-1)
-      self.saxon_army[saxon_random].receive_damage(self.viking_army[viking_random].strength)
+      battle = self.saxon_army[saxon_random].receive_damage(self.viking_army[viking_random].strength)
       if self.saxon_army[saxon_random].health <= 0:
         del self.saxon_army[saxon_random]
+      return battle
     else:
       print("No one left for battle.")
 
@@ -68,9 +69,10 @@ class War:
     if len(self.viking_army) > 0:
       saxon_random = random.randint(0,len(self.saxon_army)-1)
       viking_random = random.randint(0, len(self.viking_army)-1)
-      self.viking_army[viking_random].receive_damage(self.saxon_army[saxon_random].strength)
+      battle = self.viking_army[viking_random].receive_damage(self.saxon_army[saxon_random].strength)
       if self.viking_army[viking_random].health <= 0:
         del self.viking_army[viking_random]
+      return battle
     else:
       print("No one left for battle.")
 
