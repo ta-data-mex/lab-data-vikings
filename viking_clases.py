@@ -43,41 +43,41 @@ class Saxon(Soldier):
 # War
 class War:
   def __init__(self):
-    self.vikingArmy = []
-    self.saxonArmy = []
+    self.viking_army = []
+    self.saxon_army = []
 
   def add_viking(self, vikingo):
-    self.vikingArmy.append(vikingo)
+    self.viking_army.append(vikingo)
 
   def add_saxon(self, sajon):
-    self.saxonArmy.append(sajon)
+    self.saxon_army.append(sajon)
 
   def viking_attack(self):
     import random
-    if len(self.saxonArmy) > 0:
-      saxon_random = random.randint(0,len(self.saxonArmy)-1)
-      viking_random = random.randint(0, len(self.vikingArmy)-1)
-      self.saxonArmy[saxon_random].receive_damage(self.vikingArmy[viking_random].strength)
-      if self.saxonArmy[saxon_random].health <= 0:
-        del self.saxonArmy[saxon_random]
+    if len(self.saxon_army) > 0:
+      saxon_random = random.randint(0,len(self.saxon_army)-1)
+      viking_random = random.randint(0, len(self.viking_army)-1)
+      self.saxon_army[saxon_random].receive_damage(self.viking_army[viking_random].strength)
+      if self.saxon_army[saxon_random].health <= 0:
+        del self.saxon_army[saxon_random]
     else:
       print("No one left for battle.")
 
   def saxon_attack(self):
     import random
-    if len(self.vikingArmy) > 0:
-      saxon_random = random.randint(0,len(self.saxonArmy)-1)
-      viking_random = random.randint(0, len(self.vikingArmy)-1)
-      self.vikingArmy[viking_random].receive_damage(self.saxonArmy[saxon_random].strength)
-      if self.vikingArmy[viking_random].health <= 0:
-        del self.vikingArmy[viking_random]
+    if len(self.viking_army) > 0:
+      saxon_random = random.randint(0,len(self.saxon_army)-1)
+      viking_random = random.randint(0, len(self.viking_army)-1)
+      self.viking_army[viking_random].receive_damage(self.saxon_army[saxon_random].strength)
+      if self.viking_army[viking_random].health <= 0:
+        del self.viking_army[viking_random]
     else:
       print("No one left for battle.")
 
   def show_status(self):
-    if len(self.saxonArmy) == 0:
+    if len(self.saxon_army) == 0:
       return "Vikings have won the war of the century!"
-    if len(self.vikingArmy) == 0:
-      return "Saxons have fought for their lives and survived another day..."
-    if len(self.saxonArmy) >= 1 and len(self.vikingArmy) >= 1:
+    if len(self.viking_army) == 0:
+      return "Saxons have fought for their lives and survive another day..."
+    if len(self.saxon_army) >= 1 and len(self.viking_army) >= 1:
       return "Vikings and Saxons are still in the thick of battle."
