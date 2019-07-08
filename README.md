@@ -257,8 +257,8 @@ Modify the `War` constructor and add 5 methods to its prototype:
 When we first create a `War`, the armies should be empty. We will add soldiers to the armies later.
 
 - should receive **0 arguments**
-- should assign an empty list to the **`vikingArmy` property**
-- should assign an empty list to the **`saxonArmy` property**
+- should assign an empty list to the **`viking_army` property**
+- should assign an empty list to the **`saxon_army` property**
 
 #### `add_viking()` method
 
