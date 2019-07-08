@@ -33,7 +33,7 @@ git push origin lab-data-vikings
 
 ## Tests
 
-Best way to know how our code is doing is to work with tests. To test the `vikingsClases.py` file step by step you can comment and uncomment lines of code of `tests.py`.
+Best way to know how our code is doing is to work with tests. To test the `vikings_clases.py` file step by step you can comment and uncomment lines of code of `tests.py`.
 
 To run the battery of tests you must enter the following command line through the terminal.
 
@@ -228,7 +228,7 @@ Modify the `Saxon`, constructor function, have it inherit from `Soldier` and rei
 - should receive **0 arguments**
 - should return **the `strength` property of the `Saxon`**
 
-#### `receiveDamage()` method
+#### `receive_damage()` method
 
 (This method needs to be **reimplemented** for `Saxon` because the `Saxon` version needs to have different return values.)
 
@@ -288,7 +288,7 @@ A `Saxon` (chosen at random) has their `receive_damage()` method called with the
 - should remove dead saxons from the army
 - should return **result of calling `receive_damage()` of a `Saxon`** with the `strength` of a `Viking`
 
-#### `saxonAttack()` method
+#### `saxon_attack()` method
 
 The `Saxon` version of `viking_attack()`. A `Viking` receives the damage equal to the `strength` of a `Saxon`.
 
@@ -298,7 +298,7 @@ The `Saxon` version of `viking_attack()`. A `Viking` receives the damage equal t
 - should remove dead vikings from the army
 - should return **result of calling `receive_damage()` of a `Viking`** with the `strength` of a `Saxon`
 
-#### `showStatus()` method
+#### `show_status()` method
 
 Returns the current status of the `War` based on the size of the armies.
 
