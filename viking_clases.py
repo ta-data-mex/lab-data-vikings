@@ -1,6 +1,6 @@
 # Soldier
 
-class Soldier:
+class Soldier():
     pass
     def __init__(self, health, strength):
         self.health=health
