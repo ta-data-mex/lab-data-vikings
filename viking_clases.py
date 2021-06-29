@@ -8,12 +8,12 @@ class Soldier:
         return self.strength
     def receive_damage(damage):
         self.health=self.health-damage
-    pass
+    
 
 # Viking
 
 class Viking(Soldier):
-    pass
+    
     def __init__(self, name, health, strength):
         super().__init__(health, strength)
         self.name = name
@@ -40,10 +40,10 @@ class Saxon(Soldier):
             return "A Saxon has died in combat"     
         
     
-    pass
+    
 
 # War   
-    
+class War:    
     
     
 pass
