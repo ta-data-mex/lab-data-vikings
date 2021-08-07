@@ -11,7 +11,7 @@ class TestWar(unittest.TestCase):
     def setUp(cls):
         cls.war = War()
 
-    def testWarShouldReciveNoParams(self):
+    def testWarShouldReciveNoParams(self ):
         self.assertEqual(len(signature(War).parameters), 0)
 
     def testviking_army(self):
