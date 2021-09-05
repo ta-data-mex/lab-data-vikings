@@ -3,7 +3,7 @@ from viking_clases import Soldier
 from inspect import signature
 
 
-class TestSoldier(unittest.TestCase):
+class Soldier:
 
     @classmethod
     def setUp(cls):
